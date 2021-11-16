@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     gap: 2rem;
-    z-index: 99999999;
+    /*z-index: 99999999;*/
   }
 
   #whatsapp-widget-timelines .ww-icon {
@@ -79,7 +79,7 @@
 
   #whatsapp-widget-timelines svg {
     fill: rgb(255, 255, 255);
-    z-index: 1;
+    /*z-index: 1;*/
     border-radius: 50px;
     background-color: rgb(77, 194, 71);
     box-shadow: rgb(0 0 0 / 40%) 2px 2px 6px;
