@@ -45,6 +45,7 @@ div.upBtn{
       font-size: 3vw;
       opacity: 0.6;
       padding-right: 1%;
+      z-index: +1;
       
     }
 
@@ -233,6 +234,7 @@ box-shadow: inset 0px -3px 12px 14px rgba(0,0,0,1);;
   
   .wave figcaption {
     text-align: center;
+    padding-top: 1rem;
   }
   
   .wave:after{
@@ -337,6 +339,11 @@ button{
 -moz-box-shadow: inset 0px -3px 12px 14px rgba(0,0,0,1);
 box-shadow: inset 0px -3px 12px 14px rgba(0,0,0,1);
 }
+
+/*dinamic div product store*/
+
+
+
 .block2 .price_h2box{
 margin-top: 80px;
 text-align: center;
@@ -436,8 +443,13 @@ box-shadow: inset 0px -3px 12px 14px rgba(0,0,0,1);
   .sidenav a {font-size: 5px;}
 }
 
-
-
+.container{
+  /* שכבת הקונטיינרס בסמארטפון */
+  width: 95%;
+  margin: auto;
+  border: none!important;/*הסבר על מה עושה important  -https://www.w3schools.com/css/css_important.asp*/
+  min-height:850px;
+}
 
     .burger{
         font-size: 6vw;
@@ -455,12 +467,7 @@ box-shadow: inset 0px -3px 12px 14px rgba(0,0,0,1);
 
     }
   
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
+  /*
   .dropdown-content {
     display: none;
     position: absolute;
@@ -470,6 +477,11 @@ box-shadow: inset 0px -3px 12px 14px rgba(0,0,0,1);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+  }*/
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
   }
   
   .navLogo{
@@ -498,7 +510,7 @@ box-shadow: inset 0px -3px 12px 14px rgba(0,0,0,1);
       .container {
     margin: auto;
     border: solid 2px whitesmoke;/*תוסיף כדי לראות בבירור יותר מה עושה הפעולה בההערה למטה*/
-    min-height:100vh;
+    min-height: 950px;
       }
 
       header{
@@ -509,7 +521,7 @@ box-shadow: inset 0px -3px 12px 14px rgba(0,0,0,1);
       div.upBtn{
         position: fixed;
           bottom: 50vw;
-          padding-right: 4%;
+          padding-right: 2vw;
           font-size: 11vw;
           
         }
@@ -526,7 +538,16 @@ box-shadow: inset 0px -3px 12px 14px rgba(0,0,0,1);
     
     }
 
-
+    .strip{
+      min-height: 950px;
+      background: url(images/iphonxWelcomBack.png)no-repeat;
+      background-size: 100% 100%;
+      /*צל מלמעלה ולמטה*/
+  -webkit-box-shadow: inset 0px -3px 12px 14px rgba(0,0,0,1);
+  -moz-box-shadow: inset 0px -3px 12px 14px rgba(0,0,0,1);
+  box-shadow: inset 0px -3px 12px 14px rgba(0,0,0,1);
+  
+  }
 
     .textbox{
        
@@ -538,7 +559,7 @@ box-shadow: inset 0px -3px 12px 14px rgba(0,0,0,1);
 
 
     .wave img {
-        border: 5px solid #f8f8f8;
+        border: 3px solid silver;
         display: block;
         width: 30vw;
         height: 34vh;
@@ -557,10 +578,35 @@ box-shadow: inset 0px -3px 12px 14px rgba(0,0,0,1);
     }
     h2{
         color: whitesmoke;
-        font-size: 10vw;/*טקסט ריספונסיבי באמצעות vw unit להמשיך לשנות בשאר המקומות מפרוייקט ישן */
+        font-size: 3rem;/*טקסט ריספונסיבי באמצעות vw unit להמשיך לשנות בשאר המקומות מפרוייקט ישן */
         margin:0;
     }
 
+
+    .block1{
+      min-height: 850px;
+      background: none;
+      background-color: white;
+      -webkit-box-shadow: 0px -39px 18px -8px rgba(0,0,0,0.72);
+      -moz-box-shadow: 0px -39px 18px -8px rgba(0,0,0,0.72);
+      box-shadow: 0px -39px 18px -8px rgba(0,0,0,0.72);
+      
+  }
+
+    .whiteLogo{
+    height: 16vh;width: 100%;
+    background:url(images/black&white\ haircut\ logo.PNG)no-repeat center;
+    background-size:100% 100%;
+    margin-top:50px;
+    margin-bottom: 50px;
+
+    }
+  
+  .block1 .aboutusbox{margin-top: 50px;}
+  .block1 .h2box h2{color: black;text-align:center;margin: auto;}
+  .block1 .textbox p {color: black;}
+
+   
     .footerStyle{
         font-size: 4vw;
         
