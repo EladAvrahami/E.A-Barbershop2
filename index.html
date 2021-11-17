@@ -10,6 +10,10 @@
     <script src="https://kit.fontawesome.com/21c18cf0d2.js" crossorigin="anonymous"></script><!--זה מאתר פונטים מס 6 בקובץ וורד שיעור 32עונה1-->
     <script src="barbershopjs.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!--AOS file-->
+    <!--הסקריפט הזה יעזור לגלילה חלקה להופיע גם ב safari scroll smooth-->
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+     
+
 </head>
 <body onload="init()">
     
@@ -47,7 +51,7 @@
                  <div id="mySidenav" class="sidenav">
                   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                   <a><div class="navLogo" ></div></a>
-                  
+                  <br>
                   <a href="#aboutusbox">אודות</a>
                   <a href="#ourcustomres">הלקוחות שלנו</a> 
               <a href="#ourprice">המחירים שלנו</a>
@@ -97,25 +101,32 @@
 
     <div class="block1 container_fluid gallery" id="ourcustomres">
         <div class="container">
+            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2500"
+            class="whiteLogo">
+
+            </div>
             <div class="aboutusbox"> 
-                <div class="h2box"><h2>הלקוחות שלנו</h2> </div>
-                            
-                                <figure data-aos="fade-left" data-aos-duration="2000" class="wave">
+
+                                <figure data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000"
+                                class="wave">
                                     <img src="images/haircut4.jpeg" alt="ben"></img>
                                     <figcaption>Ben@</figcaption>
                                 </figure>
 
-                                <figure data-aos="fade-left" data-aos-duration="2000" class="wave">
+                                <figure data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000" 
+                                class="wave">
                                   <img src="images/haircut1.jpg" alt="daniel_mor"></img>
                                   <figcaption>daniel_mor@</figcaption>
                                 </figure>
                               
-                                <figure data-aos="fade-left" data-aos-duration="2000" class="wave">
+                                <figure data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="3000"
+                                 class="wave">
                                   <img src="images/haircut2.jpg" alt="chuck"></img>
                                   <figcaption>Aviel13@</figcaption>
                                 </figure>
                               
-                                <figure data-aos="fade-left" data-aos-duration="2000" class="wave">
+                                <figure data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="3000"
+                                class="wave">
                                   <img src="images/haircut3.jpg" alt="itay"></img>
                                   <figcaption>itay.levi18@</figcaption>
                                 </figure>
@@ -141,17 +152,11 @@
     </div>
 
 
-
+<!--dinamic div product store-->
     <div class="block2 container_fluid" id="ourprice"><!-- *תכלס אפשר לשים פה את תגית אימג ועל זה להוסיף בסיאסאס את ערכי העיצוב כמו מריחת האימג בשורה אחת תחת מזהה קלאס כולל של כל הפלויידים -*משימה לתיקון בהמשך  -->
           
             <div class="container">
-                <div class="h2box"><h2>המחירים שלנו </h2> </div>
-                <div class="textbox">
-                    <p> אין מה יותר מידי להסתבך אצלנו המחיר קבוע ועומד על 50שח בלבד <br>
-                          בקיצור תבואו יש מלא חניה ומחיר היכרות מיוחד לחודש הזה בלבד <br>
-                        <span style= "font-weight: bold;">תספורת ראשונה - 30 שח בלבד !!!</span>
-                    </p>
-                </div>
+
             </div> 
        
     </div>
@@ -170,12 +175,7 @@
       </div>
       
       
-    
-      
-
-
-    
-
+  
     <footer class="container_fluid">
         <div class="footerStyle">
           <br><br><br><br>
