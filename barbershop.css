@@ -324,12 +324,6 @@ button{
 
 
 
-
-
-
-
-
-
 .block2{
     min-height: 50vh;
     background:/*url(images/ourprice3.png) no-repeat*/rgb(33,33,33);
@@ -340,8 +334,50 @@ button{
 box-shadow: inset 0px -3px 12px 14px rgba(0,0,0,1);
 }
 
-/*dinamic div product store*/
 
+/*dinamic div product store*/
+.galleryContainer{
+  margin: auto;
+  border: red solid 3px;
+  min-height: 850px;
+  width: 100%;
+
+}
+
+.list {
+  margin: 0px auto;
+  width: 80%;
+  box-sizing: border-box;
+}
+.list-element {
+  width: 100%;
+  margin: 25px 0px;
+  font-family: arial;
+  border-radius: 50px;
+  padding: 10px 0px;
+  color: #2196f3;
+  font-size: 20px;
+  text-align: center;
+  box-shadow: 0px 0px 6px 0px #848484;
+  display: none;
+}
+#loadmore {
+  margin: 50px auto 0px;
+  display: table;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 4px;
+  background-color: #2196f3;
+}
+.list .list-element:nth-child(1) {
+  display: block;
+}
+.list .list-element:nth-child(2) {
+  display: block;
+}
 
 
 .block2 .price_h2box{
@@ -601,10 +637,26 @@ box-shadow: inset 0px -3px 12px 14px rgba(0,0,0,1);
     margin-bottom: 50px;
 
     }
-  
-  .block1 .aboutusbox{margin-top: 50px;}
+  .block1 .h2box {margin-top: -50px;}
   .block1 .h2box h2{color: black;text-align:center;margin: auto;}
   .block1 .textbox p {color: black;}
+
+
+  .block2{
+    min-height: 800px;
+    background-color: #111;
+    /*background-size:100% 100%;*/
+    /*צל מלמעלה ולמטה*/
+
+box-shadow: none;
+}
+.productLogo{
+  height: 16vh;width: 100%;
+  background: url(images/eaProductsHeader.png)no-repeat center;
+  background-size:100% 100%;
+  
+
+}
 
    
     .footerStyle{
