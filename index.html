@@ -10,8 +10,6 @@
     <script src="https://kit.fontawesome.com/21c18cf0d2.js" crossorigin="anonymous"></script><!--זה מאתר פונטים מס 6 בקובץ וורד שיעור 32עונה1-->
     <script src="barbershopjs.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!--AOS file-->
-    <!--הסקריפט הזה יעזור לגלילה חלקה להופיע גם ב safari scroll smooth-->
-    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
      
 
 </head>
@@ -101,7 +99,7 @@
 
     <div class="block1 container_fluid gallery" id="ourcustomres">
         <div class="container">
-            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2500"
+            <div data-aos="zoom-out" data-aos-anchor-placement="top-bottom" data-aos-duration="2000"
             class="whiteLogo">
 
             </div>
@@ -154,8 +152,58 @@
 
 <!--dinamic div product store-->
     <div class="block2 container_fluid" id="ourprice"><!-- *תכלס אפשר לשים פה את תגית אימג ועל זה להוסיף בסיאסאס את ערכי העיצוב כמו מריחת האימג בשורה אחת תחת מזהה קלאס כולל של כל הפלויידים -*משימה לתיקון בהמשך  -->
-          
-            <div class="container">
+        
+        <div data-aos="zoom-in-up" class="galleryContainer">
+            <div class="productLogo"></div>   
+            
+            
+
+
+
+
+
+
+
+
+            
+                <!-- List of your items -->
+	            <div class="list">
+                    <div class="list-element"><img src="" alt="">  <h4>Product 2</h4> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, repellat!</p></div>
+                    <div class="list-element"><img src="" alt="">  <h4>Product 2</h4> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, repellat!</p></div>
+                    <div class="list-element"><img src="" alt="">  <h4>Product 2</h4> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, repellat!</p></div>
+                    <div class="list-element"><img src="" alt="">  <h4>Product 2</h4> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, repellat!</p></div>
+                    <div class="list-element"><img src="" alt="">  <h4>Product 2</h4> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, repellat!</p></div>
+                    <div class="list-element"><img src="" alt="">  <h4>Product 2</h4> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, repellat!</p></div>
+                    <div class="list-element">Product 2</div>
+                    <div class="list-element">Product 3</div>
+                    <div class="list-element">Product 4</div>
+                    <div class="list-element">Product 5</div>
+                    <div class="list-element">Product 6</div>
+                </div>
+
+                <!-- Load More Button -->
+                <button id="loadmore">...Load More</button>
+                <br> <br>
+                
+                
+                <script>
+                    const loadmore = document.querySelector('#loadmore');
+                        let currentItems = 2;
+                        loadmore.addEventListener('click', (e) => {
+                            const elementList = [...document.querySelectorAll('.list .list-element')];
+                            for (let i = currentItems; i < currentItems + 2; i++) {
+                                if (elementList[i]) {
+                                    elementList[i].style.display = 'block';
+                                }
+                            }
+                            currentItems += 2;
+                    
+                            // Load more button will be hidden after list fully loaded
+                            if (currentItems >= elementList.length) {
+                                event.target.style.display = 'none';
+                            }
+                        })
+                    </script>
 
             </div> 
        
@@ -179,7 +227,7 @@
     <footer class="container_fluid">
         <div class="footerStyle">
           <br><br><br><br>
-        <p >Copyright @2021 | Designed With by <a href="#">E.A Barbershop</a></p>
+        <p style="direction: ltr;"> © Copyright 2021 | Designed With by <a href="#">E.A Barbershop </a></p>
         <ul class="social_footer_ul">
         <li><a href="https://www.facebook.com/profile.php?id=100002321395152"><i class="fab fa-facebook-f"></i></a></li>
         <li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
