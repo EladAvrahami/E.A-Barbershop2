@@ -338,7 +338,6 @@ box-shadow: inset 0px -3px 12px 14px rgba(0,0,0,1);
 /*dinamic div product store*/
 .galleryContainer{
   margin: auto;
-  border: red solid 3px;
   min-height: 850px;
   width: 100%;
 
@@ -688,6 +687,8 @@ box-shadow: inset 0px -3px 12px 14px rgba(0,0,0,1);
         
     }
 
+   
+    
     
     
 }
