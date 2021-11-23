@@ -7,15 +7,13 @@
     <link rel="shortcut icon" href="images/chairIcon.ico" /> 
     <link rel="stylesheet" href="barbershop.css">
     <link rel="stylesheet" href="whatsappBtn.css">
-    <script src="https://kit.fontawesome.com/21c18cf0d2.js" crossorigin="anonymous"></script><!--זה מאתר פונטים מס 6 בקובץ וורד שיעור 32עונה1-->
+    <script src="https://kit.fontawesome.com/21c18cf0d2.js" crossorigin="anonymous"></script><!--זה מאתר פונטים מס 6 בקובץ וורד -->
     <script src="barbershopjs.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!--AOS file-->
      
 
 </head>
-<body onload="init()">
-    
-   
+<body onload="closeNav()">
     <div class="upBtn">
         <a class="fas fa-arrow-circle-up" href="#aboutusbox" > </a>
        </div>
@@ -52,7 +50,7 @@
                   <br>
                   <a href="#aboutusbox">אודות</a>
                   <a href="#ourcustomres">הלקוחות שלנו</a> 
-              <a href="#ourprice">המחירים שלנו</a>
+              <a href="#ourprice">מוצרים מומלצים</a>
               <a class="fas fa-phone phon" href="tel://050420000">  לראיון עבודה</a> 
               <a class="fas fa-map-marker-alt" href="https://www.google.co.il/maps/place/%D7%90%D7%99%D7%A1%D7%A8+
                   %D7%99%D7%94%D7%95%D7%93%D7%94+%D7%90%D7%95%D7%A0%D7%98%D7%A8%D7%9E%D7%9F+6
@@ -62,11 +60,22 @@
                 </div>
               </div>
 
+              <script>
+                  /*פונקציות המשמשות לאירועי לחיצה על תפריט צד  */
+                    function closeNav() {
+                        document.getElementById("mySidenav").style.width = "0";
+                    }
+                    /* Open the sidenav */
+                    function openNav() {
+                        document.getElementById("mySidenav").style.width = "100%";
+                    }
+              </script>
+
                 <!-- desktop style bar-->
             <ul>
                 <li><a href="#aboutusbox">קצת עלינו</a> </li>
                 <li><a href="#ourcustomres">הלקוחות שלנו</a></li>
-                <li><a href="#ourprice">המחירים שלנו</a></li>
+                <li><a href="#ourprice">מוצרים מומלצים</a></li>
                 <li><a class="fas fa-phone " href="tel://0504226106">  קביעת תורים </a> </li>
                 <li><a class="fas fa-map-marker-alt " href="https://www.google.co.il/maps/place/%D7%90%D7%99%D7%A1%D7%A8+
                     %D7%99%D7%94%D7%95%D7%93%D7%94+%D7%90%D7%95%D7%A0%D7%98%D7%A8%D7%9E%D7%9F+6
@@ -117,13 +126,13 @@
                                   <figcaption>daniel_mor@</figcaption>
                                 </figure>
                               
-                                <figure data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="3000"
+                                <figure data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000"
                                  class="wave">
                                   <img src="images/haircut2.jpg" alt="chuck"></img>
                                   <figcaption>Aviel13@</figcaption>
                                 </figure>
                               
-                                <figure data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="3000"
+                                <figure data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000"
                                 class="wave">
                                   <img src="images/haircut3.jpg" alt="itay"></img>
                                   <figcaption>itay.levi18@</figcaption>
@@ -152,33 +161,18 @@
 
 <!--dinamic div product store-->
     <div class="block2 container_fluid" id="ourprice"><!-- *תכלס אפשר לשים פה את תגית אימג ועל זה להוסיף בסיאסאס את ערכי העיצוב כמו מריחת האימג בשורה אחת תחת מזהה קלאס כולל של כל הפלויידים -*משימה לתיקון בהמשך  -->
-        
         <div data-aos="zoom-in-up" class="galleryContainer">
             <div class="productLogo"></div>   
             
             
 
-
-
-
-
-
-
-
-            
                 <!-- List of your items -->
 	            <div class="list">
-                    <div class="list-element"><img src="" alt="">  <h4>Product 2</h4> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, repellat!</p></div>
-                    <div class="list-element"><img src="" alt="">  <h4>Product 2</h4> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, repellat!</p></div>
-                    <div class="list-element"><img src="" alt="">  <h4>Product 2</h4> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, repellat!</p></div>
-                    <div class="list-element"><img src="" alt="">  <h4>Product 2</h4> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, repellat!</p></div>
-                    <div class="list-element"><img src="" alt="">  <h4>Product 2</h4> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, repellat!</p></div>
-                    <div class="list-element"><img src="" alt="">  <h4>Product 2</h4> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, repellat!</p></div>
-                    <div class="list-element">Product 2</div>
-                    <div class="list-element">Product 3</div>
-                    <div class="list-element">Product 4</div>
-                    <div class="list-element">Product 5</div>
-                    <div class="list-element">Product 6</div>
+                    <div class="list-element productBox"><img src="images/products/GoldScissorsPic/GoldScissors1.PNG" alt="GoldScissors">  <h4>Gold Scissors</h4> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, repellat!</p></div>
+                    <div class="list-element productBox"><img src="images/products/hair-clipper-Gold/hair-clipper-Gold2.PNG" alt="GoldScissors">  <h4>Gold hair clipper</h4> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, repellat!</p></div>
+                    <div class="list-element productBox"><img src="images/products/hair-clipper-Gold/hair-clipper-Gold1.PNG" alt="GoldScissors">  <h4>bronze hair clipper</h4> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, repellat!</p></div>
+                    
+                 
                 </div>
 
                 <!-- Load More Button -->
@@ -191,7 +185,7 @@
                         let currentItems = 2;
                         loadmore.addEventListener('click', (e) => {
                             const elementList = [...document.querySelectorAll('.list .list-element')];
-                            for (let i = currentItems; i < currentItems + 2; i++) {
+                            for (let i = currentItems; i < currentItems + 1; i++) {
                                 if (elementList[i]) {
                                     elementList[i].style.display = 'block';
                                 }
@@ -227,7 +221,7 @@
     <footer class="container_fluid">
         <div class="footerStyle">
           <br><br><br><br>
-        <p style="direction: ltr;"> © Copyright 2021 | Designed With by <a href="#">E.A Barbershop </a></p>
+        <p style="direction: ltr;"> © Copyright 2021 | Powered by <a href="#">E.A Barbershop </a></p>
         <ul class="social_footer_ul">
         <li><a href="https://www.facebook.com/profile.php?id=100002321395152"><i class="fab fa-facebook-f"></i></a></li>
         <li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
